@@ -18,5 +18,5 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./notebook/Notebooks:/Notebooks
-    command: "start-notebook.sh --NotebookApp.token='' --NotebookApp.password='' --notebook-dir=/Notebooks"
+      - "./notebook/Notebooks:/Notebooks"
+    command: start-notebook.sh --NotebookApp.token='' --NotebookApp.password='' --notebook-dir=/Notebooks
