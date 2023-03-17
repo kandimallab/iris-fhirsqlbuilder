@@ -4,8 +4,6 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    features:
-      buildkit: true
     restart: always
     ports: 
       - 33782:1972
